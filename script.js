@@ -1,4 +1,4 @@
-let carrito = []; // Guarda los productos añadidos en la sesión actual
+let carrito = []; 
 
 function obtenerCantidad() {
   let cantidadSelect = document.getElementById("cantidad");
@@ -6,7 +6,7 @@ function obtenerCantidad() {
   if (cantidadSelect) {
     let valor = parseInt(cantidadSelect.value);
 
-    // Verificamos que la opción elegida esté dentro del rango permitido (1 a 4)
+    
     if (valor >= 1 && valor <= 4) {
       cantidadSelect.classList.remove("border-red");
       return valor;
@@ -33,11 +33,11 @@ function obtenerNombreProducto() {
 }
 
 function obtenerPrecioProducto() {
-  // CORREGIDO: id cambiado a 'precioProducto' para coincidir con tu HTML
+
   let precioElemento = document.getElementById("precioProducto");
 
   if (precioElemento) {
-    // Extrae solo los dígitos (Ejemplo: "$4990" -> 4990)
+   
     let precioLimpio = parseInt(
       precioElemento.textContent.replace(/[^0-9]/g, ""),
     );
@@ -63,13 +63,13 @@ function agregarAlCarrito() {
       subtotal: precio * cantidad,
     };
 
-    // 1. Guardamos el producto en la variable global
+    
     carrito.push(producto);
 
-    // 2. Generamos la tabla del carrito
+   
     mostrarCarrito();
 
-    // 3. Ocultamos la vista del producto y mostramos el carrito
+
     let seccionProducto = document.getElementById("seccion-producto");
     let seccionCarrito = document.getElementById("seccion-carrito");
 
@@ -103,10 +103,10 @@ function cambiarImagen(miniatura) {
     return;
   }
 
-  // Cambia la ruta
+  
   imagenPrincipal.src = miniatura.src;
 
-  // Manejo de la clase activa
+  
   let miniaturas = document.querySelectorAll(".miniaturas img");
   miniaturas.forEach((img) => img.classList.remove("activa"));
   miniatura.classList.add("activa");
@@ -126,7 +126,7 @@ function agregarAlCarrito() {
   if (nombre !== null && precio !== null && cantidad !== null) {
     let carrito = obtenerCarritoGuardado();
 
-    // Si el producto ya existe en el carrito, sumamos la cantidad
+    //Si el producto existe se suma
     let indiceExistente = carrito.findIndex((item) => item.nombre === nombre);
 
     if (indiceExistente !== -1) {
@@ -142,7 +142,7 @@ function agregarAlCarrito() {
       });
     }
 
-    // Guardamos el arreglo actualizado en el navegador
+    
     localStorage.setItem("carrito_velvetique", JSON.stringify(carrito));
 
     alert("¡Producto añadido al carrito!");
@@ -154,7 +154,7 @@ function mostrarCarrito() {
   let contenedor = document.getElementById("vista-carrito");
   let totalElemento = document.getElementById("total-precio");
 
-  if (!contenedor) return; // Si no estamos en la página del carrito, no hace nada
+  if (!contenedor) return;
 
   let carrito = obtenerCarritoGuardado();
 
@@ -207,8 +207,8 @@ function procesarCompra() {
   }
 
   alert("¡Gracias por tu compra en Velvetique!");
-  localStorage.removeItem("carrito_velvetique"); // Borra los datos almacenados
-  mostrarCarrito(); // Refresca la pantalla
+  localStorage.removeItem("carrito_velvetique"); 
+  mostrarCarrito(); 
 }
 
 // ------------------ ADMINISTRACION ------------------
