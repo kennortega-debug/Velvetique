@@ -1,7 +1,7 @@
 
 body{
     background-image: url("https://i.pinimg.com/736x/82/e5/60/82e56021afae00deee4011e58a3c7058.jpg");
-    transition: background-image 0.4s ease; /* Transición suave entre estados */
+    transition: background-image 0.4s ease; 
 }
 .contenedor-carrito {
   max-width: 900px;
@@ -41,20 +41,17 @@ body{
   box-shadow: 2px 2px 0px #000;
 }
 
-/* Estilos para los encabezados de la tabla */
 .tabla-carrito th {
   background-color:  #c496a1;
   font-weight: bold;
   color: #fbf5f5;
 }
 
-/* Efecto hover en las filas de productos */
 .tabla-carrito tbody tr:hover {
   background-color: #e0d1e0;
   
 }
 
-/* Estilo para el mensaje de carrito vacío */
 #vista-carrito p {
   text-align: center;
   padding: 30px;
@@ -62,7 +59,6 @@ body{
   font-size: 16px;
 }
 
-/* Botón 'Seguir comprando' (para alinearlo con .btn-comprar) */
 .resumen-total button:not(.btn-comprar) {
   background-color: #d9c4c9;
   color: #585858;
@@ -80,7 +76,7 @@ body{
   background-color: #f3f4f6;
 }
 
-/* Animación y estado hover del botón 'Finalizar Compra' */
+
 .btn-comprar:hover {
   background-color:  #b05c70;
 }
