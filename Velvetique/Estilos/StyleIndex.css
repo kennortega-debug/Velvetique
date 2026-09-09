@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body {
+  width: 100%;
+  background-color: #fafafa;
+  overflow-x: hidden;
+  
+}
+
+header {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header a {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+#section1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+img.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bi {
+  font-size: 1.6rem;
+  vertical-align: middle;
+  margin-right: 6px;
+  color:#9c4156
+}
+
+
+
+.resaltar {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;         /* Mantiene el color base del texto */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.resaltar:hover {
+  color: #c97387;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#anuncio {
+  width: 100%;
+  min-height: 520px;
+  background-image: url("https://i.pinimg.com/1200x/1a/f0/bf/1af0bfaa1790e7ed11f939e9327944e3.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 60px 20px 80px 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  color: #2c2c2c;
+  margin-bottom: 60px;
+}
+
+#anuncio h3 {
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+#anuncio h2 {
+  font-size: 35px;
+}
+#anuncio h4 {
+  line-height: 1.4;
+  font-size: 20px;
+}
+
+
+
+.caja-flotante {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1100px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.contenedor-calugas-caja {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.caluga-caja {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  gap: 12px;
+}
+
+.caluga-caja img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+button {
+  background-color: #c97387;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #b05c70;
+}
+
+#categorias {
+  text-align: center;
+  padding: 40px 20px 60px 20px;
+  margin: 0 auto;
+}
+
+.enlace-caluga {
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: inherit;        /* Mantiene los colores originales de tu texto */
+  display: block;        /* Asegura que abarque todo el tamaño de la caluga */
+}
+
+#categorias h4 {
+  font-size: 15px;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+}
+
+.linea-decorativa {
+  width: 80px; /* Ancho de la línea */
+  border: none;
+  height: 3px; /* Grosor de la línea */
+  background-color: #e8c5c8; /* Color de la línea */
+  margin: 0 auto 25px;
+}
+
+.contenedor-calugas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+.caluga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  gap: 12px;
+}
+
+.caluga img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 100%;
+  transition: transform 0.3s ease;
+}
+
+.caluga img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#banner-dividido {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.seccion-dividida {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+  max-height: 350px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: hidden; /* Asegura que la imagen no sobrepase los bordes */
+}
+
+
+/* Regla para que ambas columnas ocupen exactamente el 50% */
+.columna {
+  width: 50%;
+  flex: 1;
+}
+
+.columna.texto button {
+  background-color: white;
+  color: #9c4156;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 10px;
+  transition:all 0.2 ease;
+}
+
+.columna.texto button:hover {
+  background-color: #9e5969;
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.columna.texto {
+  background-color: #bc6c7f;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.columna.texto p {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.columna.texto h3 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+/* ESTILOS DE LA MITAD DERECHA (Imagen) */
+.columna.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.columna.imagen {
+  overflow: hidden;
+}
+
+
+#Sellers {
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding:40px 0;
+}
+
+#Sellers h3 {
+  color: #9c4156;
+  font-weight: bold;
+}
+#Sellers h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calugas-sellers {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  padding: 10px 10px;
+  gap: 8px;
+}
+
+.calugas-sellers img {
+  width: 160px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 5%;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-producto {
+  width: 220px;
+  /* 1. Muestra la tarjeta con alto adaptable al contenido */
+  height: auto;
+
+  /* 2. Aplica Flexbox para ordenar todo verticalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  /* 3. Espaciado interno para que nada toque los bordes */
+  padding: 20px;
+  gap: 12px; /* Controla la distancia entre imagen, texto y botón */
+
+  /* 4. Mantiene el fondo blanco y las esquinas que se observan en la imagen */
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-Sellers {
+  display: flex;
+  flex-direction: row; /* Coloca los elementos en fila (uno al lado del otro) */
+  justify-content: center; /* Centra el grupo de tarjetas horizontalmente */
+  align-items: stretch; /* Hace que todas las tarjetas tengan el mismo alto */
+  gap: 20px; /* Espacio o separación entre cada tarjeta */
+  flex-wrap: wrap; /* IMPORTANTE: Permite que bajen si no caben en la pantalla */
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centra la sección entera en la página */
+  padding: 20px;
+}
+
+
+
+.pre-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #eedde1;
+  padding: 15px 0px;
+}
+
+.pre-footer h4 {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.pre-footer p {
+  font-size: 13px;
+}
+
+.iconos {
+  display: flex;
+}
+
+.iconos i {
+  font-size: 25px;
+  margin-right: 10px;
+  color: #9c4156;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: rgb(79, 31, 57);
+  padding: 15px;
+}
+
+.footer h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.footer :nth-child(4) {
+  margin-top: 10px;
+}
+
+.redes :nth-child(3) {
+  font-size: 10px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+.redes {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  text-decoration: none;
+  padding-top: 15px;
+}
+
+.social-icons :nth-child(3) {
+  font-size: 25px;
+}
+
+.newsletter :nth-child(2) {
+  margin-top: 10px;
+}
+
+.btn-sub {
+  width: 100%;
+  max-width: 400px;
+}
+
+.btn-sub button {
+  padding: 9px;
+  border-radius: unset;
+  font-size: 9px;
+  margin-top: 15px;
+  position: relative;
+  right: 4px;
+  bottom: 1.4px;
+}
+
+.input-field {
+  padding: 6px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .caja-flotante {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 90% !important;
+    margin: 20px auto 40px auto !important; /* Coloca la caja completamente ABAJO del banner */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    padding: 20px 15px !important;
+  }
+
+  .contenedor-calugas-caja {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .caluga-caja {
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+  #anuncio {
+    margin-bottom: 0 !important;
+    padding: 40px 20px 30px 20px !important;
+    min-height: auto !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .seccion-dividida {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .columna {
+    width: 100%;
+  }
+
+  .columna.imagen img {
+    height: 250px;
+  }
+
+  .contenedor-calugas {
+    gap: 20px;
+  }
+
+  .caluga img {
+    width: 130px;
+    height: 160px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}

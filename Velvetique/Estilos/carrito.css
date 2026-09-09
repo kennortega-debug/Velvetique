@@ -1,0 +1,86 @@
+
+body{
+    background-image: url("https://i.pinimg.com/736x/82/e5/60/82e56021afae00deee4011e58a3c7058.jpg");
+    transition: background-image 0.4s ease; /* Transición suave entre estados */
+}
+.contenedor-carrito {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+.tabla-carrito {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+
+}
+
+.tabla-carrito th, 
+.tabla-carrito td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.resumen-total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.btn-comprar {
+  background-color: #c97387; 
+  color: white;
+  padding: 12px 25px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #000;
+}
+
+/* Estilos para los encabezados de la tabla */
+.tabla-carrito th {
+  background-color:  #c496a1;
+  font-weight: bold;
+  color: #fbf5f5;
+}
+
+/* Efecto hover en las filas de productos */
+.tabla-carrito tbody tr:hover {
+  background-color: #e0d1e0;
+  
+}
+
+/* Estilo para el mensaje de carrito vacío */
+#vista-carrito p {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* Botón 'Seguir comprando' (para alinearlo con .btn-comprar) */
+.resumen-total button:not(.btn-comprar) {
+  background-color: #d9c4c9;
+  color: #585858;
+  padding: 12px 20px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #000;
+  margin-left: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.resumen-total button:not(.btn-comprar):hover {
+  background-color: #f3f4f6;
+}
+
+/* Animación y estado hover del botón 'Finalizar Compra' */
+.btn-comprar:hover {
+  background-color:  #b05c70;
+}
