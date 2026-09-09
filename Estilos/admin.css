@@ -13,7 +13,8 @@
 body {
   margin: 0;
   color: var(--ink);
-  background: #fafafa;
+  background-image: url("https://i.pinimg.com/736x/fe/d9/51/fed9517c51b6c39480fac39db0b24064.jpg"); /* Ruta o enlace de la imagen */
+  background-size: cover;    
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 button,
