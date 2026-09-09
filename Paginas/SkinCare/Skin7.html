@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Estilos/StyleIndex.css">
+    <link rel="stylesheet" href="../../Estilos/StyleProducto.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+</head>
+<body>
+    <header id="header">
+      <section id="section1">
+        <img
+          class="logo"
+          src="https://i.pinimg.com/736x/79/c8/17/79c8178f1ef662f42c8ab038fa60b307.jpg"
+          alt=""
+        />
+
+        <h2>VELVETIQUE</h2>
+        <a href="../../index.html" class="resaltar">HOME</a>
+        <a href="../productos.html"class="resaltar">SHOP</a>
+        <a href="#categorias" class="resaltar">CONTACT</a>
+        <a href="../Carrito.html" class="resaltar">
+          <i class="bi bi-bag"></i>
+        </a>
+
+      </section>
+    </header>
+
+  
+  <main class="contenedor-producto">
+    <section id="seccion-producto">
+      <nav class="Guia">
+        <a href="../../index.html">Home</a> &gt; 
+        <a href="../productos.html#Skin-care">Skin Care</a> &gt; 
+        <span>CLINIQUE || Set 3 Step Skin Care</span>
+      </nav>
+
+      <div class="detalle-producto">
+        <div class="galeria-imagenes">
+          <div class="imagen-principal">
+            <img id="imgPrincipal"src="https://cl-dam-resizer.ecomm.cencosud.com/unsafe/adaptive-fit-in/1080x0/filters:quality(75)/cl/paris/539665999/variant/6a4e3d11e19422530bddad78/images/8dc666d3-27cc-491a-988b-6cc7f99ca716/539665999-0000-001.jpg"
+             alt="Principal">
+          </div>
+          <div class="miniaturas">
+            <img src="https://cl-dam-resizer.ecomm.cencosud.com/unsafe/adaptive-fit-in/1080x0/filters:quality(75)/cl/paris/539665999/variant/6a4e3d11e19422530bddad78/images/8dc666d3-27cc-491a-988b-6cc7f99ca716/539665999-0000-001.jpg" 
+              class="activa" 
+              alt="Vista 1"
+              onclick="cambiarImagen(this)">
+            <img src="https://cl-dam-resizer.ecomm.cencosud.com/unsafe/adaptive-fit-in/1920x0/cl/paris/539665999/variant/6a4e3d11e19422530bddad78/images/afd529f2-55b0-46f1-b548-3467be38e36b/539665999-0000-002.jpg" 
+              alt="Vista 2"
+              onclick="cambiarImagen(this)">
+            <img src="https://www.clinique.cl/media/export/cms/products/1200x1500/cl_sku_76X001_1200x1500_0.png" 
+              alt="Vista 3" 
+              onclick="cambiarImagen(this)">
+          </div>
+        </div>
+
+        <!-- Información del Producto (Derecha) -->
+        <div class="info-producto">
+          <div class="encabezado-producto">
+            <h2 id="nombreProducto">Set 3 Step Skin Care</h2>
+            <span id="precioProducto"class="precio">$70000</span>
+          </div>
+
+          <hr class="separador" />
+
+          <p class="descripcion">
+            Clinique 3‑Step Skin Care Mini Set 2
+
+            Locion Exfoliante Clarificadora Clarifying Lotion 2: Fórmula desarrollada por dermatólogos. Nuestra loción exfoliante más vendida para piel Seca y Mixta Seca elimina las células muertas que opacan la piel.
+            Probado dermatológicamente. Sometido a pruebas de alergia. 100% libre de fragancias.
+            Limpiador Facial Líquido All About Clean: El jabón facial líquido desarrollado por dermatólogos es el primer paso para una piel saludable. Suave limpiadora de rápido aclarado y no reseca. Deja la piel fresca.
+            Dermatológicamente probado. Oftalmológicamente probado. Sometido a pruebas de alergia. 100% libre de fragancias
+            Crema Hidratante Ligera Dramatically Different: Loción desarrollada por dermatólogos. Una loción hidratante sedosa y de rápida absorción con urea pura y glicerina pura que fortalece rápidamente la barrera de la piel.
+            Probada dermatológicamente. Sometida a pruebas de alergia. 100% libre de fragancias.
+
+          </p>
+          <hr class="separador" />
+
+          <div class="selector-cantidad">
+            <label for="cantidad">Cantidad</label>
+            <select id="cantidad">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <button class="btn-anadir" onclick="agregarAlCarrito()">Añadir al carrito</button>
+
+          <hr class="separador" />
+        </div>
+      </div>
+    </section>
+
+     <div class="contenedor-Sellers">
+          <div class="contenedor-Sellers">
+
+            <div class="tarjeta-producto">
+                <div class="calugas-sellers">
+                    <img
+                        src="https://static.sweetcare.com/img/prd/488/v-638518232659002743/hanskin-020952hv-2@2x.webp"
+                        alt=""
+                    />
+                    <p>
+                        Real Complexion Hyaluron<br />
+                        HANSKIN 
+                    </p>
+                    <h3>$13990</h3>
+                    <a href="../SkinCare/Skin5.html">
+                        <button>DETAILS</button>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            <div class="tarjeta-producto">
+                <div class="calugas-sellers">
+                    <img
+                        src="https://i.pinimg.com/736x/b1/88/c9/b188c9af76d3735ee84e3e9cb0233f56.jpg"
+                        alt=""
+                    />
+                    <p>
+                        Lactic Acid<br />
+                        The Ordinary
+                    </p>
+                    <h3>$25990</h3>
+                    <a href="../SkinCare/Skin3.html">
+                        <button>DETAILS</button>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="tarjeta-producto">
+                <div class="calugas-sellers">
+                    <img
+                        src="https://i.pinimg.com/1200x/12/44/a0/1244a0bcc0f6fb59983ef7bd3234aa44.jpg"
+                        alt=""
+                    />
+                    <p>
+                        PDRN Sérum «Exosome Shot» <br/> 
+                        Pink Collagen
+                    </p>
+                    <h3>$7990</h3>
+                    <a href="../SkinCare/Skin2.html">
+                        <button>DETAILS</button>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="tarjeta-producto">
+                <div class="calugas-sellers">
+                    <img
+                        src="https://i.pinimg.com/736x/f7/7f/45/f77f45d01444ccdd547ea4a68c02d01a.jpg"
+                        alt=""
+                    />
+                    <p>
+                        Hidra Intense<br />
+                        Gel Moisturizer
+                    </p>
+                    
+                    <h3>$6500</h3>
+                    <a href="../SkinCare/Skin4.html">
+                        <button>DETAILS</button>
+                    </a>
+                    
+                </div>
+            </div> 
+        </div>
+        
+      </section>
+    
+  </main>
+  <script src="../../script.js"></script>
+</body>
+</html>

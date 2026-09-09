@@ -1,0 +1,234 @@
+/*register form*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./contactImage.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  font-family: "Playfair Display", serif;
+  color: #9c4156;
+  padding-left: 30px;
+  padding-right: 40px;
+  margin-top: 70px;
+  margin-left: 200px;
+}
+
+.header h3 {
+  font-weight: 200;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.header h2 {
+  margin: 20px 15px;
+  text-align: center;
+  border-bottom: 0.5px solid #9c4156;
+  padding-bottom: 20px;
+}
+
+.header h4 {
+  display: inline;
+  font-weight: 100;
+  font-size: 20px;
+  border-bottom: #9c4156 solid 1px;
+  padding-bottom: 35px;
+}
+
+.header p {
+  font-family: Inter;
+  color: rgb(99, 96, 96);
+  font-size: 15px;
+  letter-spacing: normal;
+}
+
+.header :nth-child(4) {
+  padding-top: 65px;
+}
+
+.box {
+  padding: 35px;
+  color: #9c4156;
+  margin: 40px;
+  height: 90%;
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.register-form label {
+  font-size: 15px;
+}
+
+.box h2 {
+  padding: 20px 0px;
+  border-bottom: #9c4156 solid 1px;
+  text-align: center;
+}
+
+.box p {
+  text-align: center;
+  letter-spacing: normal;
+  margin-top: 20px;
+}
+
+.register-form p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.i-input {
+  position: relative;
+}
+
+.i-input i {
+  position: absolute;
+  color: gray;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.i-input input {
+  width: 100%;
+  padding-left: 25px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.campo {
+  margin-top: 20px;
+}
+
+.field-hint {
+  display: block;
+  margin-top: 4px;
+  color: #6e6666;
+  font-size: 12px;
+}
+
+.terms {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check {
+  display: flex;
+  margin-top: 10px;
+}
+
+.terms input[type="checkbox"] {
+  accent-color: #9c4156;
+  position: relative;
+  top: 10px;
+}
+
+.terms p {
+  text-align: start;
+  margin: 30px 5px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  border-bottom: #9c4156 solid 2px;
+}
+
+button {
+  font-size: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #9c4156;
+  padding: 10px 40px;
+  margin: 30px 0px 0px 5px;
+}
+
+span {
+  display: block;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .register {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .header {
+    width: 100%;
+    margin: auto;
+    }
+
+  .header h3 {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+
+  .header h2 {
+    text-align: center;
+  }
+
+  .header h4 {
+    font-size: 18px;
+    margin-right: 100px;
+  }
+
+  .header :nth-child(4) {
+    padding-top: 25px;
+  }
+
+  .header p {
+    font-size: 14px;
+    text-align:start;
+    margin-right: 40px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 500px;
+    min-height: auto;
+    padding: 25px 20px;
+    margin: 0;
+  }
+
+  .box h2 {
+    font-size: 24px;
+  }
+
+  .register-form p {
+    font-size: 17px;
+  }
+
+  .terms {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

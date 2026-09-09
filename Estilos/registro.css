@@ -1,0 +1,219 @@
+/*register form*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./contactImage.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  font-family: "Inter", sans-serif;
+  color: rgb(110, 102, 102);
+  padding-left: 30px;
+  padding-right: 40px;
+  margin-top: 70px;
+  margin-left: 200px;
+}
+
+.header h3 {
+  font-weight: 200;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.header h2 {
+  margin: 20px 15px;
+  text-align: center;
+  font-weight: 100;
+  border-bottom: 0.5px solid #9c4156;
+  padding-bottom: 20px;
+}
+
+.header h4 {
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 20px;
+  border-bottom: #9c4156 solid 1px;
+  padding-bottom: 35px;
+  width: 150px;
+}
+
+.header p {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.header :nth-child(4) {
+  padding-top: 35px;
+}
+
+.box {
+  padding: 15px;
+  color: #ffffff;
+  margin-top: 30px;
+  height: 90%;
+  border: #9c4156 solid 0.1px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.register-form label {
+  font-size: 15px;
+}
+
+.box h2 {
+  padding: 20px 0px;
+  border-bottom: #9c4156 solid 1px;
+  text-align: center;
+}
+
+.box p {
+  text-align: center;
+  letter-spacing: normal;
+  margin-top: 20px;
+}
+
+.register-form p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.i-input {
+  position: relative;
+}
+
+.i-input i {
+  position: absolute;
+  color: gray;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.i-input input {
+  width: 100%;
+  padding-left: 25px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.campo {
+  margin-top: 10px;
+}
+
+.field-hint {
+  display: block;
+  margin-top: 4px;
+  color: #6e6666;
+  font-size: 12px;
+}
+
+.terms {
+  width: 100%;
+  display: flex;
+}
+
+.terms input[type="checkbox"] {
+  accent-color: #9c4156;
+  margin-top: 12px;
+}
+
+.terms p {
+  text-align: start;
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #9c4156;
+}
+
+a:hover {
+  border-bottom: #9c4156 solid 2px;
+}
+
+button {
+  font-size: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #9c4156;
+  padding: 10px;
+  margin: 15px 0px 0px 5px;
+}
+
+span {
+  display: block;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .register {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    min-height: 100vh;
+    padding: 30px 20px;
+  }
+
+  .header {
+    width: 100%;
+    max-width: 550px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .header h3 {
+    font-size: 27px;
+  }
+
+  .header h2 {
+    margin: 15px 0;
+  }
+
+  .header h4 {
+    margin: 0 auto 15px;
+    padding-bottom: 15px;
+  }
+
+  .header :nth-child(4) {
+    padding-top: 20px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .box h2 {
+    padding: 15px 0;
+    font-size: 22px;
+  }
+
+  .register-form p {
+    font-size: 17px;
+  }
+}
